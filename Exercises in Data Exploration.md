@@ -52,7 +52,7 @@ order by city_id desc limit 5
 ## 📌  Record Counts & Distincy Values
 
 
-**Which actor_id has the most number of unique film_id records in the dvd_rentals.film_actor table?
+** Which actor_id has the most number of unique film_id records in the dvd_rentals.film_actor table?
   ````sql
   select actor_id,count(DISTINCT(film_id))
   from dvd_rentals.film_actor 
@@ -60,8 +60,40 @@ order by city_id desc limit 5
   order by 2  desc 
   limit 1;
   ````
+**  How many distinct fid values are there for the 3rd most common price value in the dvd_rentals.nicer_but_slower_film_list table?
+ 
+ ````sql
+ select price, count(DISTINCT(fid)) as distinct_value  from
+ dvd_rentals.nicer_but_slower_film_list
+ group by 1
+ order by 2 desc;
+ 
+ ````
+ 
+**  How many unique country_id values exist in the dvd_rentals.city table?
+````sql
 
+  select count(DISTINCT(country_id)) as number_of_unique_country_id
+  from dvd_rentals.city ;
+  
+  ````
+ ** What percentage of overall total_sales does the Sports category make up in the dvd_rentals.sales_by_film_category table?
+  
+  ````sql
+  
+select category,
+Round(
+100 * total_sales / sum(total_sales) OVER(),2 )as percentage
+from dvd_rentals.sales_by_film_category;
+  
+ ````
+** What percentage of unique fid values are in the Children category in the dvd_rentals.film_list table?
+````sql
+select category, count(DISTINCT(fid))
+from dvd_rentals.film_list
+group by 1;
 
+````
 
 
 
