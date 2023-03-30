@@ -9,41 +9,30 @@
 - Use `LIMIT` to restrict result to the highest category_id only.
 
 ````sql
-SELECT 
-  name, 
-  category_id
-FROM dvd_rentals.category
-ORDER BY category_id DESC
-LIMIT 1;
+select * from
+ dvd_rentals.category
+ Order by category_id desc 
+ limit 1 ;
 ````
 
 **For the films with the longest length, what is the title of the “R” rated film with the lowest replacement_cost in dvd_rentals.film table?**
+ 
 
-- There are 3 parts to this question. 
-  - 1st, filter results to find 'R' rating,
-  - 2nd, sort films' length from longest to shortest, and
-  - 3rd, sort from least to most replacement cost   
-
-```sql
-SELECT 
-  title, 
-  length, 
-  replacement_cost, 
+```SELECT
+  title,
+  replacement_cost,
+  length,
   rating
 FROM dvd_rentals.film
-WHERE rating = 'R'
-ORDER BY 
-  length DESC, 
-  replacement_cost ASC;
+ORDER BY length DESC, replacement_cost
+LIMIT 10;
 ````
 
 **Who was the manager of the store with the highest total_sales in the dvd_rentals.sales_by_store table?**
 
-````sql
-SELECT manager
-FROM dvd_rentals.sales_by_store
-ORDER BY total_sales DESC -- To find out highest to lowest total sales
-LIMIT 1; - To return 1 row for highest total sales
+````select manager,total_sales from 
+dvd_rentals.sales_by_store
+order by total_sales desc ;  
 ````
 
 **What is the postal_code of the city with the 5th highest city_id in the dvd_rentals.address table?**
