@@ -9,7 +9,7 @@ View the course here.
 
 Data Exploration
 Exercises: View my learning notes here.
-Health Analytics Mini Case Study: View the solution here.
-Marketing Analytics Case Study - Ongoing: View the solution here.
+* Health Analytics Mini Case Study: View the solution here.
+* Marketing Analytics Case Study - Ongoing: View the solution here.
 People Analytics Case Study
 8 Week SQL Challenges - Ongoing: View the repository here.
