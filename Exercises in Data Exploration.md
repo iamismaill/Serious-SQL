@@ -31,7 +31,8 @@ LIMIT 10;
 
 **Who was the manager of the store with the highest total_sales in the dvd_rentals.sales_by_store table?**
 
-````select manager,total_sales from 
+````sql 
+select manager,total_sales from 
 dvd_rentals.sales_by_store
 order by total_sales desc ;  
 ````
@@ -40,15 +41,31 @@ order by total_sales desc ;
 
 
 ````sql
-SELECT postal_code
-FROM dvd_rentals.address
-ORDER BY city_id DESC
-LIMIT 1 OFFSET 4; -- To return 5th row, offset the 1st 4 rows and limit results to 5th row only
+
+select postal_code,city_id from dvd_rentals.address
+order by city_id desc limit 5
+
 ````
 
 ***
 
-## 📌 Returns Count and Distinct Values
+## 📌  Record Counts & Distincy Values
+
+
+**Which actor_id has the most number of unique film_id records in the dvd_rentals.film_actor table?
+  ````sql
+  select actor_id,count(DISTINCT(film_id))
+  from dvd_rentals.film_actor 
+  group by actor_id
+  order by 2  desc 
+  limit 1;
+  ````
+
+
+
+
+
+
 
 **What is the frequency of values in the rating column in the film table?**
 
