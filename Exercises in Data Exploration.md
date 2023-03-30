@@ -18,7 +18,8 @@ select * from
 **For the films with the longest length, what is the title of the “R” rated film with the lowest replacement_cost in dvd_rentals.film table?**
  
 
-```SELECT
+```sql 
+SELECT
   title,
   replacement_cost,
   length,
