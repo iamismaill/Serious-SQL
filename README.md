@@ -5,11 +5,13 @@ Serious SQL is one of the courses in Data With Danny Virtual Data Apprenticeship
 
 View the course here.
 
-📚 Table of Contents
+## 📚 Table of Contents
 
-Data Exploration View my learning notes here 
-* Identifying Duplicate Records here[]([url](https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md))
-Exercises: View my learning notes here.
+## Data Exploration View my learning notes here 
+* Identifying Duplicate Records here[https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md]([url]
+ 
+
+## Exercises: View my learning notes here.
 * Health Analytics Mini Case Study: View the solution here.
 * Marketing Analytics Case Study - Ongoing: View the solution here.
 * People Analytics Case Study
