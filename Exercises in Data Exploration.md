@@ -113,6 +113,98 @@ SELECT
 from dvd_rentals.film_list
 group by 1;
 ````
+## 📌  Identifying Duplicates 
+**Which id value has the most number of duplicate records in the health.user_logs table ?**
+
+````sql
+WITH temporary_query as (
+select id,log_date,measure,measure_value,systolic,diastolic ,
+count(*) as frequency 
+from health.user_logs
+group by 1,2,3,4,5,6 )
+
+select id, sum(frequency) as total_duplicates
+from temporary_query 
+where frequency >1
+group by 1
+order by total_duplicates DESC
+limit 10;
+
+````
+
+
+**Which log_date value had the most duplicate records after removing the max duplicate id value from question 1 ?**
+````sql
+
+WITH temporary_query as (
+select id,log_date,measure,measure_value,systolic,diastolic ,
+count(*) as frequency 
+from health.user_logs
+where id != '054250c692e07a9fa9e62e345231df4b54ff435d'
+group by 1,2,3,4,5,6 )
+
+select id, sum(frequency) as total_duplicates
+from temporary_query 
+where frequency >1
+group by 1
+order by total_duplicates DESC
+limit 10;
+
+````
+**Which measure_value had the most occurences in the health.user_logs value when measure = 'weight'?**
+-- So basically the question is asking for us the mode of the measure_value when the measure is 'weight'
+````sql
+
+select measure_value , count(measure_value) as frequency 
+from health.user_logs
+where measure = 'weight'
+group by measure_value
+order by frequency desc
+limit 1;
+
+````
+
+**How many single duplicated rows exist when measure = 'blood_pressure' in the health.user_logs? How about the total number of duplicate records in the same table**
+
+````sql 
+
+WITH temporary_table as (
+select id, 
+log_date,
+measure,
+measure_value,
+systolic,
+diastolic,
+count(*) frequency
+from health.user_logs
+group by 1,2,3,4,5,6
+)
+select count(*) duplicte_rows, sum(frequency) from temporary_table 
+where measure = 'blood_pressure' and frequency >1;
+
+````
+
+**What percentage of records measure_value = 0 when measure = 'blood_pressure' in the health.user_logs table? How many records are there also for this same condition**
+
+````sql 
+
+with temporary_table as (
+
+select measure_value,
+count(*) as total_records,
+SUM(COUNT(*)) OVER () AS overall_total
+from health.user_logs
+where measure = 'blood_pressure'
+group by 1
+
+)
+select overall_total, total_records,
+round(100 * total_records / overall_total ,2) as percentage
+from temporary_table
+where measure_value =0;
+
+````
+
 
 
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/81607668/128623800-dc689fdd-2de3-4c89-9e55-75be3c4a941c.png">
