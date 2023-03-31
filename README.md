@@ -7,7 +7,8 @@ View the course here.
 
 📚 Table of Contents
 
-Data Exploration
+Data Exploration View my learning notes here 
+* Identifying Duplicate Records here[]([url](https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md))
 Exercises: View my learning notes here.
 * Health Analytics Mini Case Study: View the solution here.
 * Marketing Analytics Case Study - Ongoing: View the solution here.
