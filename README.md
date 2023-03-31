@@ -8,7 +8,7 @@ View the course here.
 ## 📚 Table of Contents
 
 ## Data Exploration View my learning notes here 
-* Identifying Duplicate Records here[https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md]([url]
+* Identifying Duplicate Records [here](https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md)
  
 
 ## Exercises: View my learning notes here.
