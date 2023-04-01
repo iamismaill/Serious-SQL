@@ -46,6 +46,7 @@ group by id
 );
 ````
 **So now , let's inspect the data according to the questions**
+
 **2. How many total measurements do we have per user on average?**
 
 ````sql
@@ -149,5 +150,19 @@ LEFT JOIN all_measures AS m
 
 <img width="920" alt="Screen Shot 2023-04-01 at 10 28 18 PM" src="https://user-images.githubusercontent.com/51711008/229291955-c1f16152-c669-42c7-a168-48c552a0621e.png">
 
+**For users that have blood pressure measurements, what is the median systolic/diastolic blood pressure values?**
+
+````sql
+SELECT
+  'blood_pressure' AS measure_name,
+  PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY systolic) AS systolic_median,
+  PERCENTILE_CONT(0.5) WITHIN GROUP (ORDER BY diastolic) AS diastolic_median
+FROM health.user_logs
+WHERE measure = 'blood_pressure'
 
 
+````
+
+**Answer**
+
+<img width="1054" alt="Screen Shot 2023-04-01 at 10 30 34 PM" src="https://user-images.githubusercontent.com/51711008/229292042-5ad7821b-e330-40b3-b858-047dcc34410f.png">
