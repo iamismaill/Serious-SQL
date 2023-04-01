@@ -204,7 +204,29 @@ from temporary_table
 where measure_value =0;
 
 ````
+## 📌  Summary Statistics
+**What is the average, median and mode values of blood glucose values to 2 decimal places?**
+````sql 
+select 
+--Average 
+round(avg(measure_value),2) as average,
+-- Median 
+PERCENTILE_CONT(0.5) WITHIN group (order by measure_value) as median_value,
+--Mode
+round( MODE() WITHIN GROUP (ORDER BY measure_value),2 ) AS mode_value
+from health.user_logs 
+where measure = 'blood_glucose';
+````
+**What is the most frequently occuring measure_value value for all blood glucose measurements?**
 
+````sql 
+select measure_value , count(*) as frequency
+from health.user_logs
+where measure ='blood_glucose'
+group by 1
+order by 2 desc 
+limit 3; 
+````
 
 
 <img width="440" alt="image" src="https://user-images.githubusercontent.com/81607668/128623800-dc689fdd-2de3-4c89-9e55-75be3c4a941c.png">
