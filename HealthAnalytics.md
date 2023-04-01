@@ -28,5 +28,4 @@ select count(DISTINCT(id)) as unique_users from
 health.user_logs ; 
 
 ````
-
-https://github.com/iamismaill/Serious-SQL/blob/main/Screen%20Shot%202023-04-01%20at%2010.10.37%20PM.png
+<img width="299" alt="Screen Shot 2023-04-01 at 10 10 37 PM" src="https://user-images.githubusercontent.com/51711008/229291179-28e8aede-01f5-40e1-9dca-3851a2eef817.png">
