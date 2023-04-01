@@ -28,6 +28,9 @@ select count(DISTINCT(id)) as unique_users from
 health.user_logs ; 
 
 ````
+
+**Answer**
+
 <img width="299" alt="Screen Shot 2023-04-01 at 10 10 37 PM" src="https://user-images.githubusercontent.com/51711008/229291179-28e8aede-01f5-40e1-9dca-3851a2eef817.png">
 
 **In order to Answer From Q2 to Q8 - let's create temporary table**
@@ -44,12 +47,16 @@ group by id
 ````
 **So now , let's inspect the data according to the questions**
 **2. How many total measurements do we have per user on average?**
+
 ````sql
 select 
 avg(measure_count) as avg_measurement 
 from user_measure_info ;
+
 ````
+
 **Answer**
+
 <img width="366" alt="Screen Shot 2023-04-01 at 10 15 55 PM" src="https://user-images.githubusercontent.com/51711008/229291323-b17f01f5-bc71-4e02-b0c8-bf311613d363.png">
 
 **What about the median number of measurements per user ?**
@@ -58,7 +65,9 @@ select
 PERCENTILE_CONT(0.5) WITHIN group (order by measure_count ) as median_value
 from user_measure_info ; 
 ````
+
 **Answer**
+
 <img width="366" alt="Screen Shot 2023-04-01 at 10 15 55 PM" src="https://user-images.githubusercontent.com/51711008/229291391-16785b98-d588-4363-8389-6325a3abda4e.png">
 
 **How many users have 3 or more measurements?**
@@ -67,6 +76,8 @@ select count(id)  from
 user_measure_info where measure_count >= 3 ; 
 
 ````
+**Answer**
+
 <img width="213" alt="Screen Shot 2023-04-01 at 10 19 12 PM" src="https://user-images.githubusercontent.com/51711008/229291471-60682b62-1ccd-4c43-911a-32b3d0d1b9a8.png">
 
 
