@@ -18,7 +18,15 @@ Looking at the logs data - what is the number and percentage of the active user 
 For users that have blood pressure measurements:
 9	What is the median systolic/diastolic blood pressure values??
 
-
 By cleaning and analyzing the data, I aim to provide meaningful insights that can inform decision-making and improve health outcomes.
 
 
+### 1. How many unique users exist in the logs dataset?
+````sql
+
+select count(DISTINCT(id)) as unique_users from 
+health.user_logs ; 
+
+````
+
+https://github.com/iamismaill/Serious-SQL/blob/main/Screen%20Shot%202023-04-01%20at%2010.10.37%20PM.png
