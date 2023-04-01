@@ -80,7 +80,74 @@ user_measure_info where measure_count >= 3 ;
 
 <img width="213" alt="Screen Shot 2023-04-01 at 10 19 12 PM" src="https://user-images.githubusercontent.com/51711008/229291471-60682b62-1ccd-4c43-911a-32b3d0d1b9a8.png">
 
+**How many users have 1,000 or more measurements**
 
+````sql
+select count(*)
+from user_measure_info where measure_count >= 1000;
+
+````
+**Answer**
+
+<img width="203" alt="Screen Shot 2023-04-01 at 10 23 03 PM" src="https://user-images.githubusercontent.com/51711008/229291682-1892294b-176f-4e2f-af67-ba973e021af9.png">
+
+**What is the number and percentage of the active user base who have logged blood glucose measurements?**
+````sql
+
+select measure, count(DISTINCT id) as unique_blood_glucose_users,
+  ROUND(100 * COUNT(DISTINCT id) / SUM(COUNT(DISTINCT id)) OVER(),2) AS blood_glucose_percentage
+from health.user_logs
+where measure ='blood_glucose' 
+group by 1 ;
+
+
+````
+
+**Answer**
+
+<img width="1078" alt="Screen Shot 2023-04-01 at 10 23 58 PM" src="https://user-images.githubusercontent.com/51711008/229291761-d4b49f1d-cb9f-43c4-89c8-a8259ece77a4.png">
+
+**What is the number and percentage of the active user base who have at least 2 types of measurements?**
+````sql
+
+WITH measure_more_than_2 AS (
+SELECT *
+FROM user_measure_info
+WHERE unique_measure_count >= 2)
+
+
+SELECT
+  COUNT(DISTINCT m.id) AS unique_user,
+  ROUND(100 * COUNT(DISTINCT m.id)::numeric / COUNT(DISTINCT u.id),2) AS unique_user_percentage
+FROM user_measure_info AS u
+LEFT JOIN measure_more_than_2 AS m
+  ON u.id = m.id
+
+````
+**Answer**
+
+<img width="1013" alt="Screen Shot 2023-04-01 at 10 26 06 PM" src="https://user-images.githubusercontent.com/51711008/229291838-624e5a82-ec31-475d-bd07-6b879023a7df.png">
+
+**What is the number and percentage of the active user base who have all 3 measures - blood glucose, weight and blood pressure?**
+````sql
+
+WITH all_measures AS (
+SELECT *
+FROM user_measure_info
+WHERE unique_measure_count = 3)
+
+ 
+SELECT
+  COUNT(DISTINCT m.id) AS unique_user,
+  ROUND(COUNT(DISTINCT m.id)::numeric / COUNT(DISTINCT u.id),2) AS unique_user_percentage
+FROM user_measure_info AS u
+LEFT JOIN all_measures AS m
+  ON u.id = m.id;
+
+````
+**Answer**
+
+<img width="920" alt="Screen Shot 2023-04-01 at 10 28 18 PM" src="https://user-images.githubusercontent.com/51711008/229291955-c1f16152-c669-42c7-a168-48c552a0621e.png">
 
 
 
