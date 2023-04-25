@@ -1,5 +1,7 @@
 ### Case Study: Danny's Diner
 
+![dinner](https://user-images.githubusercontent.com/51711008/234267396-149cf1a7-102c-47f6-9e51-c38801a97051.png)
+
 As a data analyst, I am presented with a case study to assist Danny in analyzing data for his restaurant that specializes in sushi, curry, and ramen. Danny has collected information over a few months of operation, but he requires my expertise in utilizing this data to drive growth for his business.
 
 Problem Statement
