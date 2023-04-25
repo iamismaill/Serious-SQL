@@ -1,6 +1,5 @@
 
-
-
+** Case Danny's Dinner **
 ### 1- What is the total amount each customer spent at the restaurant?
 -- Customer Id, Price , Total Amount of each customer 
 ````sql
