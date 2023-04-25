@@ -15,9 +15,8 @@ In this repository contains Eight weeks of case studies in #8WeekSQL Challenge ,
 
 ## Case Study #1: Danny's Diner 
 
-![case_One](https://user-images.githubusercontent.com/51711008/234276975-6d2986bc-d30b-425f-9519-fc8eeb5af445.png)
-
-my **solution** [here](https://github.com/katiehuangx/8-Week-SQL-Challenge/tree/main/Case%20Study%20%231%20-%20Danny's%20Diner) and on [Medium]
+![case_One]([https://user-images.githubusercontent.com/51711008/234276975-6d2986bc-d30b-425f-9519-fc8eeb5af445.png](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Danny's%20Diner/Solution.md))
+ 
 
 
 
