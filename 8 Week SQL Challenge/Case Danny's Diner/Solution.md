@@ -1,6 +1,7 @@
 
-** Case Danny's Dinner **
-### 1- What is the total amount each customer spent at the restaurant?
+**Case Danny's Dinner**
+
+#### 1- What is the total amount each customer spent at the restaurant?
 -- Customer Id, Price , Total Amount of each customer 
 ````sql
 select S.customer_id, sum(price) as total_amount  from 
@@ -8,14 +9,15 @@ dannys_diner.sales S inner join dannys_diner.menu M on
 S.product_id = M.product_id 
 group by 1
 order by 2 desc;
-
 ````
 
----2. How many days has each customer visited the restaurant?
+### 2.How many days has each customer visited the restaurant?
+````sql
 select customer_id,count( DISTINCT order_date) total_days 
 from dannys_diner.sales 
 group by 1
 order by 2 desc;
+````
 
 --3. What was the first item from the menu purchased by each customer?
 select S.customer_id , M.product_name ,S.order_date
