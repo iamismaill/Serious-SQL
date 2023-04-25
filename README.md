@@ -13,7 +13,4 @@ View the course here.
 
 ## Exercises: View my learning notes here.
 * Excercises in Data Exploration [here](https://github.com/iamismaill/Serious-SQL/blob/main/Exercises%20in%20Data%20Exploration.md)
-* Health Analytics Mini Case Study: View the solution here.
-* Marketing Analytics Case Study - Ongoing: View the solution here.
-* People Analytics Case Study
 * 8 Week SQL Challenges - Ongoing: View the repository here.
