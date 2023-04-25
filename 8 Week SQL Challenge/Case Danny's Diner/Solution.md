@@ -1,17 +1,16 @@
 
---Danny's Dinner..
 
--- Hordhac
--- Problem Statement 
 
---1- What is the total amount each customer spent at the restaurant?
+### 1- What is the total amount each customer spent at the restaurant?
 -- Customer Id, Price , Total Amount of each customer 
-
+````sql
 select S.customer_id, sum(price) as total_amount  from 
 dannys_diner.sales S inner join dannys_diner.menu M on 
 S.product_id = M.product_id 
 group by 1
 order by 2 desc;
+
+````
 
 ---2. How many days has each customer visited the restaurant?
 select customer_id,count( DISTINCT order_date) total_days 
