@@ -60,6 +60,10 @@ group by 1,2,3
 order by 3 asc;
 ````
 
+<img width="660" alt="Screen Shot 2023-04-26 at 5 11 29 PM" src="https://user-images.githubusercontent.com/51711008/234512619-74b317b0-5a11-4455-8f5f-70e8688cb864.png">
+
+***
+
 ### What is the most purchased item on the menu and how many times was it purchased by all customers?
 ````sql
 select S.product_id ,M.product_name,count(order_date) as number_of_orders
@@ -69,6 +73,10 @@ group by 1,2
 order by 3 desc
 limit 1;
 ````
+<img width="671" alt="Screen Shot 2023-04-26 at 5 13 51 PM" src="https://user-images.githubusercontent.com/51711008/234513177-41ce560f-2af2-4a21-8e22-0b17f7e45f69.png">
+
+
+***
 
 ### Which item was the most popular for each customer?
 
@@ -80,6 +88,10 @@ group by 1, 2
 order by order_count desc;
 
 ````
+
+
+***
+
 ### Which item was purchased first by the customer after they became a member?
 ````sql
 create TABLE first_purchased as (
@@ -99,6 +111,8 @@ WHERE rank = 1;
 
 ````
 
+
+***
 ### Which item was purchased just before the customer became a member?
 
 ````sql
