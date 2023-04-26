@@ -151,6 +151,32 @@ select s.customer_id, s.order_date, m.product_name, m.price,
   on s.customer_id = c.customer_id  
   order by s.customer_id , s.order_date;
  ``` 
+ 
+ ### Rank All The Things - Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
+ 
+```sql 
+WITH summary_cte AS 
+(
+   SELECT s.customer_id, s.order_date, m.product_name, m.price,
+      CASE
+      WHEN mm.join_date > s.order_date THEN 'N'
+      WHEN mm.join_date <= s.order_date THEN 'Y'
+      ELSE 'N' END AS member
+   FROM dannys_diner.sales AS s
+   LEFT JOIN dannys_diner.menu AS m
+      ON s.product_id = m.product_id
+   LEFT JOIN dannys_diner.members AS mm
+      ON s.customer_id = mm.customer_id
+)
+
+SELECT *, CASE
+   WHEN member = 'N' then NULL
+   ELSE
+      RANK () OVER(PARTITION BY customer_id, member
+      ORDER BY order_date) END AS ranking
+FROM summary_cte;
+
+```
 
 
 
