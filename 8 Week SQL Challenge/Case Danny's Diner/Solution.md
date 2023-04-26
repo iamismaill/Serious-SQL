@@ -29,7 +29,9 @@ group by 1
 order by 2 desc;
 ````
 <img width="505" alt="Screen Shot 2023-04-26 at 5 03 46 PM" src="https://user-images.githubusercontent.com/51711008/234510808-6d7fbfb0-f7f6-49e4-a943-d02ae983e1a9.png">
-
+* Customer A spent $76.
+* Customer B spent $74.
+* Customer C spent $36.
 ### How many days has each customer visited the restaurant?
 ````sql
 select customer_id,count( DISTINCT order_date) total_days 
