@@ -1,6 +1,7 @@
 
 **Case Danny's Dinner**
 
+
  
 
 As a data analyst, I am presented with a case study to assist Danny in analyzing data for his restaurant that specializes in sushi, curry, and ramen. Danny has collected information over a few months of operation, but he requires my expertise in utilizing this data to drive growth for his business.
@@ -88,7 +89,7 @@ group by 1, 2
 order by order_count desc;
 
 ````
-
+<img width="1269" alt="Screen Shot 2023-04-26 at 5 36 01 PM" src="https://user-images.githubusercontent.com/51711008/234518928-25dd47b1-9278-4bba-b886-bde240e7fd7e.png">
 
 ***
 
@@ -110,6 +111,8 @@ JOIN dannys_diner.menu  m
 WHERE rank = 1;
 
 ````
+<img width="1152" alt="Screen Shot 2023-04-26 at 5 37 27 PM" src="https://user-images.githubusercontent.com/51711008/234519239-673d845d-a6f6-432c-86f1-40b08a406518.png">
+
 
 
 ***
@@ -134,6 +137,12 @@ WHERE rank = 1;
 
 ````
 
+<img width="1147" alt="Screen Shot 2023-04-26 at 5 38 18 PM" src="https://user-images.githubusercontent.com/51711008/234519524-7d6565c2-8289-4d27-a438-838e1e32d55a.png">
+
+
+*** 
+
+
 ### What is the number of unique menu items and total amount spent for each member ? before they became a member?
 ```sql
 select s.customer_id,count(DISTINCT s.product_id) as unique_menu_items,
@@ -145,6 +154,10 @@ where s.order_date <c.join_date
 group by 1
 ;
 ```
+<img width="1151" alt="Screen Shot 2023-04-26 at 5 39 43 PM" src="https://user-images.githubusercontent.com/51711008/234519822-e58f285d-ae76-4dbf-ad02-f370ca91ae4d.png">
+
+
+**** 
 ### If each $1 spent equates to 10 points and sushi has a 2x points multiplier -  how many points would each customer have ?
 
 ```sql
@@ -164,6 +177,10 @@ select s.customer_id,sum(d.points) as Total_Points
     group by 1;
 ```
 
+<img width="517" alt="Screen Shot 2023-04-26 at 5 40 29 PM" src="https://user-images.githubusercontent.com/51711008/234520028-0171df45-0a02-4e7e-8f99-f6a5cccba00b.png">
+
+
+*** 
 ### Join All The Things - Recreate the table with: customer_id, order_date, product_name, price, member (Y/N)
 
 ```sql
@@ -181,6 +198,10 @@ select s.customer_id, s.order_date, m.product_name, m.price,
   order by s.customer_id , s.order_date;
  ``` 
  
+ <img width="1155" alt="Screen Shot 2023-04-26 at 5 41 49 PM" src="https://user-images.githubusercontent.com/51711008/234520418-8cdfa08d-2856-4588-a370-ce82e0d895fe.png">
+
+ 
+ *** 
  ### Rank All The Things - Danny also requires further information about the ranking of customer products, but he purposely does not need the ranking for non-member purchases so he expects null ranking values for the records when customers are not yet part of the loyalty program.
  
 ```sql 
@@ -206,6 +227,11 @@ SELECT *, CASE
 FROM summary_cte;
 
 ```
+
+<img width="1268" alt="Screen Shot 2023-04-26 at 5 43 17 PM" src="https://user-images.githubusercontent.com/51711008/234520754-484eb013-16a0-4ef6-9d56-811d49b73e0c.png">
+
+****
+
 
 
 
