@@ -5,8 +5,7 @@ This GitHub repository showcases my 8Week SQL coding challenge, where I have uti
 Through this challenge, I have honed my SQL skills and deepened my understanding of data analysis. I have learned how to use SQL to identify patterns, trends, and outliers in data sets, and how to draw insights that can help businesses make informed decisions. This repository is a testament to my growth as a data analyst and SQL practitioner, and I am excited to share my work with the world.
 
 ## 📚 Table of Contents
-[Case Study Danny's Dinner ]([url](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Danny's%20Diner))
- 
+-  [Case Study Danny's Dinner](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Danny's%20Diner)
  
 
 
