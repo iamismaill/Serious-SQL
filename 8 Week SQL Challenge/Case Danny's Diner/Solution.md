@@ -105,7 +105,52 @@ WHERE rank = 1;
 
 ````
 
+### What is the number of unique menu items and total amount spent for each member ? before they became a member?
+```sql
+select s.customer_id,count(DISTINCT s.product_id) as unique_menu_items,
+sum(m.price) as total_price
+from dannys_diner.sales s inner join dannys_diner.menu m
+on s.product_id =m.product_id
+inner join dannys_diner.members C on s.customer_id = C.customer_id
+where s.order_date <c.join_date 
+group by 1
+;
+```
+### If each $1 spent equates to 10 points and sushi has a 2x points multiplier -  how many points would each customer have ?
 
+```sql
+DROP TABLE IF EXISTS data_info;
+create table data_info as (
+Select * ,
+  CASE WHEN product_id =1 THEN price * 20 
+    ELSE price * 10
+    END as Points
+  from
+  dannys_diner.menu
+  )
+
+select s.customer_id,sum(d.points) as Total_Points 
+  from data_info d inner join dannys_diner.sales s
+    on s.product_id =d.product_id
+    group by 1;
+```
+
+### Join All The Things - Recreate the table with: customer_id, order_date, product_name, price, member (Y/N)
+
+```sql
+select s.customer_id, s.order_date, m.product_name, m.price,
+  CASE 
+      WHEN c.join_date > s.order_date THEN 'N'
+      WHEN c.join_date <= s.order_date THEN 'Y'
+      ELSE 'N'
+  END as Member
+  from dannys_diner.sales s
+    LEFT join dannys_diner.menu m
+  on m.product_id = s.product_id
+    LEFT join dannys_diner.members c 
+  on s.customer_id = c.customer_id  
+  order by s.customer_id , s.order_date;
+ ``` 
 
 
 
