@@ -44,6 +44,13 @@ group by 1
 order by 2 desc;
 ````
 
+<img width="506" alt="Screen Shot 2023-04-26 at 5 09 06 PM" src="https://user-images.githubusercontent.com/51711008/234511933-6c95a70a-c85f-40d5-9b3e-12784f0353c8.png">
+
+- Customer A Visited 4 days 
+- Cusstomer B Visited 6 days 
+- Customer C Vistied 2 days
+*** 
+
 ### What was the first item from the menu purchased by each customer?
 ````sql
 select S.customer_id , M.product_name ,S.order_date
