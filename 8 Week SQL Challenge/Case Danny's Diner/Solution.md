@@ -16,6 +16,7 @@ Danny has shared with me  3 key datasets for this case study:
 * menu
 * members
 
+
 Uncovering Business Insights: Key Questions for Danny's Restaurant
 
 #### What is the total amount each customer spent at the restaurant?
@@ -27,6 +28,7 @@ S.product_id = M.product_id
 group by 1
 order by 2 desc;
 ````
+<img width="505" alt="Screen Shot 2023-04-26 at 5 03 46 PM" src="https://user-images.githubusercontent.com/51711008/234510808-6d7fbfb0-f7f6-49e4-a943-d02ae983e1a9.png">
 
 ### How many days has each customer visited the restaurant?
 ````sql
