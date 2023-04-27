@@ -2,7 +2,7 @@
 
 # 🍧 Case Study Pizza Runner
 
-<img src = "https://user-images.githubusercontent.com/51711008/234846881-e3315819-c766-4925-88ec-c40f10104e5d.png" alt ="Image" width ="400" height ="400>
+<img src = "https://user-images.githubusercontent.com/51711008/234846881-e3315819-c766-4925-88ec-c40f10104e5d.png" alt ="Image" width ="500" height ="500">
 
 
 
@@ -17,7 +17,7 @@ Danny is expanding his new Pizza Empire and at the same time, he wants to Uberiz
 Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters (otherwise known as Danny’s house) and also maxed out his credit card to pay freelance developers to build a mobile app to accept orders from customers.
 
 ## Entity Relationship Diagram
- <img src = "https://user-images.githubusercontent.com/51711008/234847456-f5c71f7a-28f5-4dc3-b64e-27208904436b.png" alt ="Image" width="400" height ="400">
+ <img src = "https://user-images.githubusercontent.com/51711008/234847456-f5c71f7a-28f5-4dc3-b64e-27208904436b.png" alt ="Image" width="500" height ="500">
  
 
 
