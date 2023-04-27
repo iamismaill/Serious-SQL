@@ -6,6 +6,8 @@ Through this challenge, I have honed my SQL skills and deepened my understanding
 
 ## 📚 Table of Contents
 -  [Case Study Danny's Dinner](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Danny's%20Diner)
+-  [Case Study Pizza Runner](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Danny's%20Diner)
+ 
  
 
 
