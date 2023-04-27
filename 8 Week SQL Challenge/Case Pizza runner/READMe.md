@@ -2,8 +2,8 @@
 
 # 🍧 Case Study Pizza Runner
 <img src="https://user-images.githubusercontent.com/81607668/127727503-9d9e7a25-93cb-4f95-8bd0-20b87cb4b459.png" alt="Image" width="400" height="400">
+<img src = "https://user-images.githubusercontent.com/51711008/234846881-e3315819-c766-4925-88ec-c40f10104e5d.png" alt ="Image" width ="400" height ="400>
 
-![2](https://user-images.githubusercontent.com/51711008/234846881-e3315819-c766-4925-88ec-c40f10104e5d.png)
 
 
 ## 📚 Business Task
