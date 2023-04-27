@@ -3,6 +3,9 @@
 # 🍧 Case Study Pizza Runner
 <img src="https://user-images.githubusercontent.com/81607668/127727503-9d9e7a25-93cb-4f95-8bd0-20b87cb4b459.png" alt="Image" width="400" height="400">
 
+![2](https://user-images.githubusercontent.com/51711008/234846881-e3315819-c766-4925-88ec-c40f10104e5d.png)
+
+
 ## 📚 Business Task
 
 As a data analyst, I am presented with a case study to assist Danny in analyzing data for his  Pizza Runner store that specializes in Meatlovers and  Vegetarian Pizza. Danny has collected information over a few months of operation, but he requires my expertise in utilizing this data to drive growth for his business. Overall, my goal is to provide Pizza Runner with actionable insights to help them grow and succeed in the competitive pizza delivery market. 
