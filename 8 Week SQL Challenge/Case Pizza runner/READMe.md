@@ -1,7 +1,7 @@
 
 
 # 🍧 Case Study Pizza Runner
-<img src="https://user-images.githubusercontent.com/81607668/127727503-9d9e7a25-93cb-4f95-8bd0-20b87cb4b459.png" alt="Image" width="400" height="400">
+
 <img src = "https://user-images.githubusercontent.com/51711008/234846881-e3315819-c766-4925-88ec-c40f10104e5d.png" alt ="Image" width ="400" height ="400>
 
 
@@ -14,12 +14,12 @@ As a data analyst, I am presented with a case study to assist Danny in analyzing
 ## Business Task
 
 Danny is expanding his new Pizza Empire and at the same time, he wants to Uberize it, so Pizza Runner was launched!
-
 Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runner Headquarters (otherwise known as Danny’s house) and also maxed out his credit card to pay freelance developers to build a mobile app to accept orders from customers.
 
-
 ## Entity Relationship Diagram
-https://user-images.githubusercontent.com/81607668/127271531-0b4da8c7-8b24-4a14-9093-0795c4fa037e.png
+ <img src = "https://user-images.githubusercontent.com/51711008/234847456-f5c71f7a-28f5-4dc3-b64e-27208904436b.png" alt ="Image" width="400" height ="400">
+ 
+
 
 ### A. Pizza Metrics
 
