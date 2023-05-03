@@ -1,11 +1,26 @@
---1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
+# 🍕 Case Study Pizza Runner
 
+## Runner & Customer Experience
+
+Uncovering Business Insights: Key Questions
+
+
+
+### How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
+
+````sql
 SELECT 
   DATE_PART('week', registration_date) AS registration_week,
   COUNT(runner_id) AS runner_signup
 FROM pizza_runner.runners
 GROUP BY 1;
---2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
+
+````
+
+### What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
+
+````sql
+
 WITH cte_pickup_minutes AS (
   SELECT DISTINCT
     t1.order_id,
@@ -19,8 +34,12 @@ WITH cte_pickup_minutes AS (
 SELECT
   ROUND(AVG(pickup_minutes), 3) AS avg_pickup_minutes
 FROM cte_pickup_minutes;
---Is there any relationship between the number of pizzas and how long the order takes to prepare?
 
+````
+
+### Is there any relationship between the number of pizzas and how long the order takes to prepare?
+
+````sql
 WITH prep_time_cte AS
 (
   SELECT 
@@ -44,9 +63,11 @@ FROM prep_time_cte
 WHERE pickup_minutes > 1
 GROUP BY pizza_order;
 
+````
 
---What was the difference between the longest and shortest delivery times for all orders?
+### What was the difference between the longest and shortest delivery times for all orders?
 
+````sql
 WITH duration AS (
   SELECT
   CAST(SUBSTRING(duration from '[0-9]+') as Integer) as duration 
@@ -56,7 +77,13 @@ WITH duration AS (
 SELECT
   MAX(DURATION) - MIN(duration) AS max_difference
 FROM duration ;
---What was the average speed for each runner for each delivery and do you notice any trend for these values?
+
+````
+
+#### What was the average speed for each runner for each delivery and do you notice any trend for these values?
+
+````sql
+
 WITH average_speed as (
 SELECT 
   r.runner_id, 
@@ -81,7 +108,11 @@ select
   ROUND((distance/duration * 60), 2) AS avg_speed 
   from average_speed
 
---What is the successful delivery percentage for each runner?
+
+````
+### What is the successful delivery percentage for each runner?
+
+````sql
 SELECT 
   runner_id, 
   ROUND(100 * SUM(
@@ -89,3 +120,5 @@ SELECT
     ELSE 1 END) / COUNT(*), 0) AS success_perc
 FROM pizza_runner.runner_orders
 GROUP BY runner_id;
+
+````
