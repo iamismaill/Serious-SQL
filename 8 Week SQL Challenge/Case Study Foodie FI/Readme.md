@@ -30,7 +30,7 @@ View my solution [here](https://github.com/iamismaill/Serious-SQL/blob/main/8%20
 
 ### B. Data Analysis Questions
 
-View my solution [here]().
+View my solution [here](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Study%20Foodie%20FI/Data_Insights_Questions.md).
   
 1. How many customers has Foodie-Fi ever had?
 2. What is the monthly distribution of trial plan start_date values for our dataset - use the start of the month as the group by value
