@@ -1,4 +1,4 @@
-# 🍧 Case Study Danny's Diner 
+# 🍧 Case Study Pizza Runner
 
 ## Pizza Metrics 
 
