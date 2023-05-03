@@ -38,7 +38,7 @@ Uncovering Bussiness Insights [here](https://github.com/iamismaill/Serious-SQL/b
 
 ### B. Runner and Customer Experience
 
-Uncovering Bussiness Insights [here]().
+Uncovering Bussiness Insights [here](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Pizza%20runner/Runner%20and%20Customer%20Experience.md).
 
 1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
