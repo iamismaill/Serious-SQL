@@ -25,7 +25,7 @@ This case study focuses on using subscription style digital data to answer impor
 
 ### A. Customer Journey
 
-View my solution [here]().
+View my solution [here](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Study%20Foodie%20FI/Customer_Journey.md).
   
 
 ### B. Data Analysis Questions
