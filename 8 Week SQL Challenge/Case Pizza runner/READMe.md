@@ -23,7 +23,7 @@ Danny started by recruiting “runners” to deliver fresh pizza from Pizza Runn
 
 ### A. Pizza Metrics
 
-Uncovering Bussiness Insights [here](https://github.com/katiehuangx/8-Week-SQL-Challenge/blob/main/Case%20Study%20%232%20-%20Pizza%20Runner/A.%20Pizza%20Metrics.md).
+Uncovering Bussiness Insights [here](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Pizza%20runner/Pizza_Metrics.md).
 
 1. How many pizzas were ordered?
 2. How many unique customer orders were made?
@@ -38,7 +38,7 @@ Uncovering Bussiness Insights [here](https://github.com/katiehuangx/8-Week-SQL-C
 
 ### B. Runner and Customer Experience
 
-Uncovering Bussiness Insights [here](https://github.com/iamismaill/Serious-SQL/blob/main/8%20Week%20SQL%20Challenge/Case%20Pizza%20runner/Pizza_Metrics.md).
+Uncovering Bussiness Insights [here]().
 
 1. How many runners signed up for each 1 week period? (i.e. week starts 2021-01-01)
 2. What was the average time in minutes it took for each runner to arrive at the Pizza Runner HQ to pickup the order?
@@ -47,17 +47,3 @@ Uncovering Bussiness Insights [here](https://github.com/iamismaill/Serious-SQL/b
 5. What was the difference between the longest and shortest delivery times for all orders?
 6. What was the average speed for each runner for each delivery and do you notice any trend for these values?
 7. What is the successful delivery percentage for each runner?
-
-### C. Ingredient Optimisation
-
-1. What are the standard ingredients for each pizza?
-2. What was the most commonly added extra?
-3. What was the most common exclusion?
-4. Generate an order item for each record in the customers_orders table in the format of one of the following:
-- Meat Lovers
-- Meat Lovers - Exclude Beef
-- Meat Lovers - Extra Bacon
-- Meat Lovers - Exclude Cheese, Bacon - Extra Mushroom, Peppers
-5. Generate an alphabetically ordered comma separated ingredient list for each pizza order from the customer_orders table and add a 2x in front of any relevant ingredients
-6. For example: "Meat Lovers: 2xBacon, Beef, ... , Salami"
-7. What is the total quantity of each ingredient used in all delivered pizzas sorted by most frequent first?
