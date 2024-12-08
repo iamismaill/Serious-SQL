@@ -7,17 +7,11 @@ In this repository I  demonstrate my SQL programming skills as a student of the 
 
 ## 📚 Table of Contents
 
-## Data Exploration View my learning notes here 
-* Identifying Duplicate Records [here](https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md)
-
-## Exercises: View my learning notes here.
-* Excercises in Data Exploration [here](https://github.com/iamismaill/Serious-SQL/blob/main/Exercises%20in%20Data%20Exploration.md)
-* 8 Week SQL Challenges - Ongoing:[View the repository](https://github.com/iamismaill/Serious-SQL/tree/main/8%20Week%20SQL%20Challenge)
-* [portofoliochallenge](https://github.com/NajmaMahadAdam/citycotihub-projects/tree/main/challenge%20one)
 # Frontend-projects
 Welcome to **CitycotiHub!** This repository contains frontend project assignments from Citycot iHub. It's a collection of tasks and projects designed to help you learn, practice, and improve your frontend development skills.<br>
 <br>
-**list of projects in this repository**
+## List of projects in this repository**
+* Basic html portfolio with CSS [here](https://github.com/NajmaMahadAdam/citycotihub-projects/tree/main/basic%20html%20portfolio%20with%20CSS)
+* Portofolio Challenge [View the repository](https://github.com/NajmaMahadAdam/citycotihub-projects/tree/main/challenge%20one)
 
 
-  
