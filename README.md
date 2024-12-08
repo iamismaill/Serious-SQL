@@ -12,14 +12,12 @@ In this repository I  demonstrate my SQL programming skills as a student of the 
 
 ## Exercises: View my learning notes here.
 * Excercises in Data Exploration [here](https://github.com/iamismaill/Serious-SQL/blob/main/Exercises%20in%20Data%20Exploration.md)
-* 8 Week SQL Challenges - Ongoing:[View the repository](https://github.com/iamismaill/Serious-SQL/tree/main/8%20Week%20SQL%20Challenge).
+* 8 Week SQL Challenges - Ongoing:[View the repository](https://github.com/iamismaill/Serious-SQL/tree/main/8%20Week%20SQL%20Challenge)
+* [portofoliochallenge](https://github.com/NajmaMahadAdam/citycotihub-projects/tree/main/challenge%20one)
 # Frontend-projects
 Welcome to **CitycotiHub!** This repository contains frontend project assignments from Citycot iHub. It's a collection of tasks and projects designed to help you learn, practice, and improve your frontend development skills.<br>
 <br>
 **list of projects in this repository**
 
-<ul>
-  <li>basic html portfolio with CSS</li>
-  <li>[portofoliochallenge](https://github.com/NajmaMahadAdam/citycotihub-projects/tree/main/challenge%20one)</li>
-  <li></li>
-</ul>
+
+  
