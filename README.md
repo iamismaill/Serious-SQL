@@ -9,7 +9,7 @@ In this repository I  demonstrate my SQL programming skills as a student of the 
 
 ## Data Exploration View my learning notes here 
 * Identifying Duplicate Records [here](https://github.com/iamismaill/Serious-SQL/blob/main/IdentifyingDuplicates.md)
-* Idsasta [here] (https://github.com/NajmaMahadAdam/citycotihub-projects)
+* Idsasta [here](https://github.com/NajmaMahadAdam/citycotihub-projects)
  
 
 ## Exercises: View my learning notes here.
